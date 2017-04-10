@@ -10,5 +10,11 @@ import {render} from 'react-dom';
  //render(<h1>merhaba</h1>,document.getElementById("app"))
 
  //render( <App />,  document.getElementById('app') );
-  import {Clock} from './timeNow'
+  //import {Clock} from './timeNow'
  //import {App} from './as'
+ //import {Cift} from './counter'
+
+ //import {ToggleButton} from    './toggleButton'
+
+
+ import {LoginControl} from './loginLogout'
