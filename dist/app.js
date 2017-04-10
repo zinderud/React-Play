@@ -8240,7 +8240,7 @@
 
 	var _reactDom = __webpack_require__(455);
 
-	var _loginLogout = __webpack_require__(456);
+	var _InlineLogical = __webpack_require__(456);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27758,13 +27758,6 @@
 
 	'use strict';
 
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.LoginControl = undefined;
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	var _react = __webpack_require__(299);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -27773,99 +27766,27 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var LoginControl = exports.LoginControl = function (_React$Component) {
-	    _inherits(LoginControl, _React$Component);
-
-	    function LoginControl(props) {
-	        _classCallCheck(this, LoginControl);
-
-	        var _this = _possibleConstructorReturn(this, (LoginControl.__proto__ || Object.getPrototypeOf(LoginControl)).call(this, props));
-
-	        _this.LoginClick = _this.LoginClick.bind(_this);
-	        _this.LogoutClick = _this.LogoutClick.bind(_this);
-	        _this.state = {
-	            isLoggedIn: false
-	        };
-	        return _this;
-	    }
-
-	    _createClass(LoginControl, [{
-	        key: 'LoginClick',
-	        value: function LoginClick() {
-	            this.setState({ isLoggedIn: true });
-	        }
-	    }, {
-	        key: 'LogoutClick',
-	        value: function LogoutClick() {
-	            this.setState({ isLoggedIn: false });
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            var isLoggedIn = this.state.isLoggedIn; //todo learn Why ?
-	            var button = null;
-	            if (isLoggedIn) {
-	                button = _react2.default.createElement(LogoutButton, { onClick: this.LogoutClick });
-	            } else {
-	                button = _react2.default.createElement(LoginButton, { onClick: this.LoginClick });
-	            }
-
-	            return _react2.default.createElement(
-	                'div',
-	                null,
-	                _react2.default.createElement(Selamlama, { isLoggedIn: isLoggedIn }),
-	                button
-	            );
-	        }
-	    }]);
-
-	    return LoginControl;
-	}(_react2.default.Component);
-
-	function KullaniciSelamlama(props) {
+	function Kutu(props) {
+	    var kutuKapasite = props.kutuKapasite;
 	    return _react2.default.createElement(
-	        'h1',
+	        'div',
 	        null,
-	        'Merhaba Kullanici '
-	    );
-	}
-	function ZiyaretciSelamlama(props) {
-	    return _react2.default.createElement(
-	        'h1',
-	        null,
-	        'Merhaba  Ziyaterci '
-	    );
-	}
-	function Selamlama(props) {
-	    var isLoggedIn = props.isLoggedIn;
-	    if (isLoggedIn) {
-	        return _react2.default.createElement(KullaniciSelamlama, null);
-	    } else {
-	        return _react2.default.createElement(ZiyaretciSelamlama, null);
-	    }
-	}
-	function LoginButton(props) {
-	    return _react2.default.createElement(
-	        'button',
-	        { onClick: props.onClick },
-	        'Login'
+	        _react2.default.createElement(
+	            'h2',
+	            null,
+	            'Kutu Alarm Durumu'
+	        ),
+	        kutuKapasite > 4 && _react2.default.createElement(
+	            'h2',
+	            null,
+	            ' kutu kapasitesi ',
+	            kutuKapasite - 4,
+	            ' a\u015F\u0131ld'
+	        )
 	    );
 	}
 
-	function LogoutButton(props) {
-	    return _react2.default.createElement(
-	        'button',
-	        { onClick: props.onClick },
-	        'Logout'
-	    );
-	}
-	(0, _reactDom.render)(_react2.default.createElement(LoginControl, null), document.getElementById("app"));
+	(0, _reactDom.render)(_react2.default.createElement(Kutu, { kutuKapasite: 5 }), document.getElementById("app"));
 
 /***/ }
 /******/ ]);

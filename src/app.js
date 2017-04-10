@@ -17,4 +17,5 @@ import {render} from 'react-dom';
  //import {ToggleButton} from    './toggleButton'
 
 
- import {LoginControl} from './loginLogout'
+ //import {LoginControl} from './loginLogout'
+ import { Kutu} from  './Inline-logical';
