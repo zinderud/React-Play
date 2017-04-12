@@ -18,4 +18,6 @@ import {render} from 'react-dom';
 
 
  //import {LoginControl} from './loginLogout'
- import { Kutu} from  './Inline-logical';
+// import { Kutu} from  './Inline-logical';
+  //import {Layout} from  './page1';
+  import {} from './redux/simpleRedux'
