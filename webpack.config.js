@@ -8,7 +8,7 @@ module.exports = {
     entry: ['babel-polyfill', path.join(PATHS.src, '/app.js')],
 
     resolve: {
-        extensions: ['', '.js', '.jsx']
+        extensions: [ '.js', '.jsx']
     },
 
     output: {
@@ -19,7 +19,7 @@ module.exports = {
     module: {
         loaders: [{
             test: /\.jsx?$/,
-            loader: 'babel',
+            loader: 'babel-loader',
             exclude: /node_modules/,
             include: PATHS.src,
             query: {
