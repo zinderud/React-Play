@@ -22,4 +22,7 @@ import {render} from 'react-dom';
   //import {Layout} from  './page1';
   //import {} from './redux/simpleRedux'
  // import {} from './redux/multipleReducer'
- import {} from  './page/sign-up/sign'
+ //import {} from  './page/sign-up/sign'
+// import {} from  './page/timer/timer'
+ //import {} from  './page/FourOhFour/FourOhFour'
+ import {} from  './page/calculator/calculator'
