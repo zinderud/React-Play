@@ -21,4 +21,5 @@ import {render} from 'react-dom';
 // import { Kutu} from  './Inline-logical';
   //import {Layout} from  './page1';
   //import {} from './redux/simpleRedux'
-  import {} from './redux/multipleReducer'
+ // import {} from './redux/multipleReducer'
+ import {} from  './page/sign-up/sign'
