@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "05a7baf10a50066ea576"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "dc3c9bfebfb8cb1aa91b"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotMainModule = true; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -38851,6 +38851,7 @@ var App = function (_React$Component) {
 
     _this.state = { operations: [] };
     _this.handleClick = _this.handleClick.bind(_this);
+    _this.calculateOperations = _this.calculateOperations.bind(_this);
     return _this;
   }
 

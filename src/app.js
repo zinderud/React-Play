@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
- //import {Arttir} from './arttir'
+//import {Arttir} from './start/arttir'
 //import { FuncBir} from './funcBir'
 // import {tiktak} from './timeing'
  //import { App} from './fun2'
@@ -25,4 +25,9 @@ import {render} from 'react-dom';
  //import {} from  './page/sign-up/sign'
 // import {} from  './page/timer/timer'
  //import {} from  './page/FourOhFour/FourOhFour'
- import {} from  './page/calculator/calculator'
+  import {} from  './page/calculator/calculator'
+ //import {} from  './page/cards/card'
+
+
+
+
