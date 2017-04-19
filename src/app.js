@@ -30,4 +30,5 @@ import {render} from 'react-dom';
 
 
 
+import {Arttir} from './start/HelloWorld '
 

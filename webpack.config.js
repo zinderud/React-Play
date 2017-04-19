@@ -14,7 +14,7 @@ const PATHS = {
 
 var config= {
     entry: ['babel-polyfill', path.join(PATHS.src, '/app.js')],
-
+  devtool: 'source-map',
     resolve: {
         extensions: ['.js', '.jsx']
     },
