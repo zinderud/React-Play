@@ -25,10 +25,12 @@ import {render} from 'react-dom';
  //import {} from  './page/sign-up/sign'
 // import {} from  './page/timer/timer'
  //import {} from  './page/FourOhFour/FourOhFour'
-  import {} from  './page/calculator/calculator'
+  //import {} from  './page/calculator/calculator'
  //import {} from  './page/cards/card'
 
 
 
-import {Arttir} from './start/HelloWorld '
+//import {Arttir} from './start/HelloWorld '
+
+import {} from  './page/todo/index'
 
